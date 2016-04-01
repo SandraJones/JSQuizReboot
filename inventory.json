@@ -1,0 +1,31 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it"
+    },
+    {     
+      "make": "VW",
+      "model": "Gulf",
+      "year": "2000",
+      "price": "1999", 
+      "color": "Yellow",
+      "purchased": false,
+      "description": "This is an immaculate 2000 VW Gulf with only 25000 miles on it" 
+    },
+    {   
+      "make": "Fiat",
+      "model": "Lemon",
+      "year": "2010",
+      "price": "999",
+      "color": "Purple",
+      "purchased": false,
+      "description": "This is an immaculate 2010 Fiat Lemon with only 25000 miles on it"
+    } 
+  ]
+}
