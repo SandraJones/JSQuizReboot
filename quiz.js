@@ -1,24 +1,38 @@
-"use strict";
-var CarLot = (function(inventory) {
-		function populate(inventory) {
-		  // Loop over the inventory and populate the page
-		  var list = document.getElementsByClassName("output");
-		  var outputString = "";
-		  for (var i = 0; i < CarLot.inventory.length; i++) {
-		  	 var currentCar = CarLot.getInventory();
-		  	 //build up DOM string
-		  	 outputString += `<div class="row">
-          <div class="col-xs-4"><h1>${currentInventory.make}</h1>
-  	<h2>${currentInventory.model}</h2><h3>${currentInventory.year}</h3>${currentInventory.price}</h3><h4>${currentInventory.color}</h4>
-  	<h5>${currentInventory.purchased}</h5><h6>${currentInventory.description}</h6></div>;
-          </div>`;
-          // <div class="output" class="container"> + inventory[i].cars + </div>`;
-		  list.innerHTML += outputString; 
-		  }
-		  // Now that the DOM is loaded, establish all 
-		  // the event listeners needed
-		}
-		// Load the inventory and send a callback 
-		// function to be invoked after the process is complete
-   return inventory;
-})(CarLot);
+var privateInventory = [];  	
+     //build up DOM string
+function buildCarDisplay() {
+		container.innerHTML += `<div class="output1 container row"><section class="col-xs-4" class = "border">${privateInventory.make}${privateInventory.model}${privateInventory.year}${privateInventory.price}${privateInventory.color}${privateInventory.description}</section>    
+    </div>`;
+   }   
+  // Now that the DOM is loaded, establish all 
+  // the event listeners needed
+
+function addClickEvent(privateInventory) {
+  for (let i=0; i < privateInventory; i++){
+    let currentCar = privateInventory.car[i].make.model;
+    let currentDescription = privateInventory.car[i].description;
+    currentCar.addEventListener("click", function(event) {
+      removeSelected();
+      input.value =  "";
+      input.focus();
+      currentCar.classList.add("selected")
+      keyEvent(currentCar, currentDescription);
+    })
+  }
+};
+// Load the inventory and send a callback 
+// function to be invoked after the process is complete
+
+function populate(privateInventory) {
+  console.log("privateInventory", privateInventory );
+  // Loop over the inventory and populate the page
+  var list = document.getElementsByClassName("output1");
+  
+  for (var i = 0; i < privateInventory.length; i++) {
+    var currentCar = privateInventory[i];
+    buildCarDisplay(privateInventory);
+  }   
+  addClickEvent();
+}    
+   
+CarLot.loadInventory(populate);
