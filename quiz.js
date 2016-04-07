@@ -2,18 +2,20 @@
 let privateInventory = [];  	
      //build up DOM string
 function buildCarDisplay() {
+  console.log("buildCarDisplay");
   for (let i = 0; i < privateInventory.length; i++){
 		let container = "";
     container[i].innerHTML += `<div class="output1 container row"><section class="col-xs-4 border">${privateInventory[i].make}${privateInventory[i].model}${privateInventory[i].year}${privateInventory[i].price}${privateInventory[i].color}${privateInventory[i].description}</section>    
     </div>`;
+    console.log("container", container[i].innerHTML);
   }
 }   
 function removeSelected() {
   for (let i=0; i< privateInventory; i++) {
     privateInventory[i].classList.remove("selected");
+    console.log("removeSelected", privateInventory);
   }
 }
-
 function keyEvent(currentCard, currentBio){
   input.addEventListener("keyup", function(event) {
     //if returns a boolean, so check if currentCard
@@ -25,15 +27,16 @@ function keyEvent(currentCard, currentBio){
          input.value = "";
       }   
     }
+    console.log("keyEvent");
   });
 }
-
   // Now that the DOM is loaded, establish all 
   // the event listeners needed
 function addClickEvent(privateInventory) {
   for (let i=0; i < privateInventory; i++){
     let currentCar = privateInventory[i].cars.make;
     let currentDescription = privateInventory[i].cars.description;
+    console.log("currentCar", currentCar);
     currentCar.addEventListener("click", function(event) {
       removeSelected();
       input.value =  "";
