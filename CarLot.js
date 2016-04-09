@@ -2,10 +2,10 @@ var CarLot = (function () {
   var privateInventory = [];
 
   return {
-  //   getInventory: function () {
-  //     return privateInventory;
-  //      console.log("inventory");
-  //   }, 
+    // getInventory: function () {
+    //   return privateInventory;
+    //    console.log("inventory");
+    // }, 
     loadInventory: function (callBack) {
       var invLoader = new XMLHttpRequest();
 	      invLoader.open("GET", "inventory.json");

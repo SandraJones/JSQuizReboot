@@ -8,6 +8,8 @@ function buildCarDisplay() {
     container[i].innerHTML += `<div class="output1 container row"><section class="col-xs-4 border">${privateInventory[i].make}${privateInventory[i].model}${privateInventory[i].year}${privateInventory[i].price}${privateInventory[i].color}${privateInventory[i].description}</section>    
     </div>`;
     console.log("container", container[i].innerHTML);
+    changeBorder();
+    changeColor();
   }
 }   
 function removeSelected() {
@@ -18,7 +20,7 @@ function removeSelected() {
 }
 function keyEvent(currentCard, currentBio){
   input.addEventListener("keyup", function(event) {
-    //if returns a boolean, so check if currentCard
+    //if returns a boolean, so check if currentCar
     if (currentCar.classList.contains("selected")) {
       let newDescription = event.currentTarget.value;
       currentDescription.innerHTML = newDescription; 
@@ -38,10 +40,12 @@ function addClickEvent(privateInventory) {
     let currentDescription = privateInventory[i].cars.description;
     console.log("currentCar", currentCar);
     currentCar.addEventListener("click", function(event) {
+      //call removeSelected()
       removeSelected();
       input.value =  "";
       input.focus();
       currentCar.classList.add("selected")
+      //call keyevent()
       keyEvent(currentCar, currentDescription);
     })
   }

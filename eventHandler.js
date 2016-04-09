@@ -1,15 +1,11 @@
 "use strict";
-var CarLot = (function(inventory) {
-
-
+let CarLot = (function(inventory) {
 	function changeBorder() {
-    border.addEventListener("click", function(event));    
-	}
-
+    document.getElementById("output1").style.border = "thick solid privateInventory[i].color";   
+		border.addEventListener("click", function(event)); 
+		}
   function changeColor() {
-    border.addEventListener("click", function(event));
-      
+  	document.getElementById("output1").style.background = grey;
+    border.addEventListener("click", function(event));   
   }
-
-
 })(CarLot);
