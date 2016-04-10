@@ -6,7 +6,7 @@ var outputTarget = document.getElementById("outputTarget");
 function buildCarDisplay(privateInventory) {
   for (let i = 0; i < privateInventory.length; i++){
     outputTarget.innerHTML += `<div><section class="col-xs-4 border">${privateInventory[i].make}
-    ${privateInventory[i].model}${privateInventory[i].year}${privateInventory[i].price}${privateInventory[i].color}${privateInventory[i].description}</section></div>`;
+    ${privateInventory[i].model}${privateInventory[i].year}${privateInventory[i].price}${privateInventory[i].color}${privateInventory[i].description}${privateInventory[i].image}</section></div>`;
     CarLot.oldCarLot.changeBorder(privateInventory);
     CarLot.oldCarLot.changeColor(privateInventory);
   }
