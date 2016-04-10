@@ -5,27 +5,30 @@
       "model": "Rogue",
       "year": "2006",
       "price": "8999",
-      "color": "FireBrick",
+      "color": "red",
       "purchased": false,
-      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it"
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it",
+      "image": "https://http://www.canstockphoto.com/images-photos/red-car.html#file_view.php?id=2879600" 
     },
     {     
       "make": "VW",
       "model": "Gulf",
       "year": "2000",
       "price": "1999", 
-      "color": "Yellow",
+      "color": "red",
       "purchased": false,
-      "description": "This is an immaculate 2000 VW Gulf with only 25000 miles on it" 
+      "description": "This is an immaculate 2000 VW Gulf with only 25000 miles on it",
+      "image": "https://http://www.canstockphoto.com/images-photos/red-car.html"
     },
     {   
       "make": "Fiat",
       "model": "Lemon",
       "year": "2010",
       "price": "999",
-      "color": "Purple",
+      "color": "blue",
       "purchased": false,
-      "description": "This is an immaculate 2010 Fiat Lemon with only 25000 miles on it"
+      "description": "This is an immaculate 2010 Fiat Lemon with only 25000 miles on it",
+      "image": "https://http://www.canstockphoto.com/images-photos/blue-car.html#file_view.php?id=14363578"
     } 
   ]
 }
