@@ -1,5 +1,4 @@
 "use strict";
-//line 3 just added
 var CarLot = (function(oldCarLot) {
   var outputTarget = document.getElementById("outputTarget"); 	
 
@@ -38,26 +37,9 @@ var CarLot = (function(oldCarLot) {
         currentCar.classList.add("selected");
         //call keyevent()
         keyEvent(currentCar, currentDescription);
-
       });
     }
   }
-  // Load the inventory and send a callback 
-  // function to be invoked after the process is complete
-  // oldCarLot.populate = function(privateInventory) {
-  //   console.log("privateInventory2", privateInventory );
-  //   // Loop over the inventory and populate the page
-  //   // let list = document.getElementsByClassName("output1");  
-  //   for (let i = 0; i < privateInventory.length; i++) {
-  //     let currentCar = privateInventory[i];
-  //     CarLot.buildCarDisplay(privateInventory);
-  //   }   
-    
-  // }  
-  // border.addEventListener("click", function(event) {
-
-      // }); 
-
        //build up DOM string
   oldCarLot.buildCarDisplay = function(privateInventory) {
     for (let i = 0; i < privateInventory.length; i++){
@@ -68,8 +50,7 @@ var CarLot = (function(oldCarLot) {
        // CarLot.changeBorder(currCarColor);
     }
     CarLot.addClickEvent();
-  }
-  //lines 67 and 68 just added
+  } 
    return oldCarLot;
 })(CarLot);
  CarLot.loadInventory(CarLot.buildCarDisplay);
