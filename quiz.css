@@ -12,6 +12,9 @@
 	border: 3px;
 	width: 30%;
 }
-.form-control {
-	width: 50%;
+#inputSpot {
+	width: 20%;
+}
+.col-xs-4-border {
+	width: 30%;
 }

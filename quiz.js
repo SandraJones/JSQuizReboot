@@ -47,7 +47,6 @@ var CarLot = (function(oldCarLot) {
       ${privateInventory[i].model}${privateInventory[i].year}${privateInventory[i].price}${privateInventory[i].color}${privateInventory[i].description}</section></div>`;
        console.log("privateInventory", privateInventory);
        var currCarColor = privateInventory[i].color
-       // CarLot.changeBorder(currCarColor);
     }
     CarLot.addClickEvent();
   } 
