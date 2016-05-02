@@ -32,10 +32,8 @@ var CarLot = (function(oldCarLot) {
       let currentDescription = privateInventory[i].cars.description;
       console.log("currentCar", currentCar);
       currentCar.addEventListener("click", function(event) {
-        //call removeSelected()
+        //call removeSelected
         removeSelected();
-        // input.value =  "";
-        // input.focus();
         currentCar.classList.add("selected");
         //call keyevent()
         keyEvent(currentCar, currentDescription);

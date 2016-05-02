@@ -6,6 +6,7 @@ var CarLot = (function(){
       return privateInventory;
        console.log("inventory");
     }, 
+    //loading the object 
     loadInventory: function (callBack) {
       var invLoader = new XMLHttpRequest();
         invLoader.open("GET", "inventory.json");
