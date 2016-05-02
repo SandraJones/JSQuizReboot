@@ -34,14 +34,14 @@ var CarLot = (function(oldCarLot) {
 		console.log("6 clickedClass", clickedClass);
 		classId = clickedClass.getAttribute("id");
 		console.log("7 classId", classId);
-
+//try using fatBorder in place of "selected" on lines 39, 41, 44
 		if (clickedThings.length !== 0) {
-				clickedClass.classList.remove("selected");
+				clickedClass.classList.remove("fatBorder");
 				console.log("	8 clicked", clickedClass[0]);
-				clickedClass.classList.add("selected");
+				clickedClass.classList.add("fatBorder");
 			}
 		else {
-				clickedClass.classList.add("selected");
+				clickedClass.classList.add("fatBorder");
 			}
 		oldCarLot.chgBorderEvent(clickedClass);	
     oldCarLot.editor(clickedClass);
@@ -57,6 +57,7 @@ var CarLot = (function(oldCarLot) {
 		  currentDescr.innerHTML = newDescr;
 		    if (event.keyCode === 13) {
 		       input.value = "";
+		       currentDescr = "";
 	    	};     	
 	 	 });
 	};
