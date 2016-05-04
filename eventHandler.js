@@ -54,8 +54,9 @@ var CarLot = (function(oldCarLot) {
 		    if (event.keyCode === 13) {
 		       input.value = "";
 		       currentDescr = "";
-	    	};     	
-	 	 });
+	    	};
+	  });
+	 	//work on removing hit enter and change to listening for another card being clicked on 
 	};
 	//allows us to change from normal to thick border
 	oldCarLot.chgBorderEvent = function(classId) {
