@@ -1,0 +1,42 @@
+/*.border {
+	border: 1px;
+}
+.border1 {
+	border: 3px;
+}*/
+
+.color {
+	background: grey;
+}
+.selected {
+	border: 3px;
+	width: 30%;
+}
+#inputSpot {
+	width: 20%;
+}
+.col-xs-4  {
+	width: 30%;
+}
+.newBackground {
+	background: yellow;
+}
+.card {
+	max-width: 28%;
+	background: lightgrey;
+	overflow: auto;
+	font-size: 1em;
+}
+.blue {
+	border: 1px solid blue;
+}
+.purple {
+	border: 1px solid purple;
+}
+.red {
+	border: 1px solid red;
+}
+.fatBorder {
+	border-width: 3px;
+	background: yellow;
+}
