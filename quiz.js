@@ -5,7 +5,6 @@ var CarLot = (function(oldCarLot) {
   oldCarLot.removeSelected = function() {
     for (let i=0; i < privateInventory; i++) {
       privateInventory[i].classList.remove("selected");
-      console.log("removeSelected", privateInventory);
     }
   }
 
@@ -20,7 +19,6 @@ var CarLot = (function(oldCarLot) {
            input.value = "";
         }   
       }
-      console.log("keyEvent");
     });
   }
 
@@ -30,7 +28,6 @@ var CarLot = (function(oldCarLot) {
     for (let i=0; i < privateInventory; i++){
       let currentCar = privateInventory[i].cars.make;
       let currentDescription = privateInventory[i].cars.description;
-      console.log("currentCar", currentCar);
       currentCar.addEventListener("click", function(event) {
         //call removeSelected
         removeSelected();

@@ -4,7 +4,6 @@ var CarLot = (function(){
   return {
     getInventory: function () {
       return privateInventory;
-       console.log("inventory");
     }, 
     //loading the object 
     loadInventory: function (callBack) {
@@ -14,7 +13,6 @@ var CarLot = (function(){
         invLoader.addEventListener("load", function () {
         //set the value of the private array
           privateInventory = JSON.parse(this.responseText).cars;
-          console.log("privateInventory", privateInventory);
         callBack(privateInventory);
         });
     }
